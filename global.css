@@ -1,0 +1,21 @@
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+
+:root {
+
+    --main-bg-color: #fff;
+    --primary-color: #001;
+    --accent-primary-color: #002;
+    --alternative-color: #003;
+    --accent-alternative-color: #004;
+    --header-items-color: #005;
+    --header-bg-color: #006;
+    --sticky-header-bg-color: #007;
+    --text-primary-color: #008;
+    --text-alternative-color: #009;
+    --heading-color: #010;
+    --paragraph-color: #011;
+    --pretty-text-color: #012;
+
+}
