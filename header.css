@@ -1,0 +1,28 @@
+
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.navbar-nav > .nav-item > .nav-link {
+    border-radius: 80px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: #4d4d4f
+}
+
+/* .navbar-nav > .nav-item:hover > .nav-link {
+    background-color: #f7941d;
+    color: white;
+} */
+
+.navbar-nav > .nav-item > .nav-link.active {
+    background-color: #f7941d;
+    color: white;
+}
+
+
+.nav-gray.nav-link {
+    color: #939598;
+}
+
