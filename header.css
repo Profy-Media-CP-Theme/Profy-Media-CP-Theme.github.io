@@ -16,12 +16,7 @@
     color: white;
 }
 
-/* .navbar-nav > .nav-item > .nav-link.active {
-    background-color: #f7941d;
-    color: white;
-} */
-
-.dropdown-menu.show {
+.dropdown-menu.show.flex-drop {
     display: flex;
     padding: 0;
 }
@@ -36,8 +31,13 @@
     background: white;
 }
 
-.dropdown-menu .orange-dropdown{
+.dropdown-menu .orange-dropdown { 
     background: #f7941d;
+    display:none;
+}
+
+.dropdown-menu .orange-dropdown.show { 
+    display:block;
 }
 
 .dropdown-item {
@@ -45,7 +45,7 @@
 }
 
 .white-dropdown .dropdown-item:hover {
-    background-color: inherit;
+    background-color: white;
     text-decoration: underline;
     color: #f7941d;
 }
