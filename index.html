@@ -49,20 +49,31 @@
                             data-bs-toggle="dropdown" aria-expanded="false">
                             PRODUCTS &nbsp;<i class="bi bi-chevron-down"></i>
                         </a>
-                        <div class="dropdown-menu test-drop-menu" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu flex-drop" aria-labelledby="navbarDropdown">
                             <div class="white-dropdown p-3">
                                 <ul>
-                                    <li><a class="dropdown-item" href="#">Card manunfactre</a></li>
-                                    <li><a class="dropdown-item" href="#">Card services</a></li>
+                                    <li>
+                                        <a class="dropdown-item drop-toggle" id="orangenav1">Card manunfacture</a>
+                                    </li>
+                                    <li><a class="dropdown-item drop-toggle" id="orangenav2">Card services</a></li>
                                 </ul>
                             </div>
-                            <div class="orange-dropdown p-3">
+                            <div class="orange-dropdown p-3" id="orangenav1" aria-labelledby="orangenav1">
                                 <ul>
                                     <li><a class="dropdown-item" href="#">Casino cards</a></li>
                                     <li><a class="dropdown-item" href="#">Business cards</a></li>
                                     <li><a class="dropdown-item" href="#">Gift cards</a></li>
                                     <li><a class="dropdown-item" href="#">Loyalty cards</a></li>
                                     <li><a class="dropdown-item" href="#">Non-standard cards</a></li>
+                                </ul>
+                            </div>
+                            <div class="orange-dropdown p-3" id="orangenav2" aria-labelledby="orangenav1">
+                                <ul>
+                                    <li><a class="dropdown-item" href="#">Second Casino cards</a></li>
+                                    <li><a class="dropdown-item" href="#">Second Business cards</a></li>
+                                    <li><a class="dropdown-item" href="#">Second Gift cards</a></li>
+                                    <li><a class="dropdown-item" href="#">Second Loyalty cards</a></li>
+                                    <li><a class="dropdown-item" href="#">Second Non-standard cards</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -109,6 +120,32 @@
 
     <div class="d-flex" style="height: 2000px;"></div>
 
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $('.dropdown-menu a.drop-toggle').on('click', function (e) {
+            var togid = $(this).attr('id');
+            var child = $(".orange-dropdown#" + togid).first();
+
+            if (!child.hasClass('show')) {
+                $(this).parents('.dropdown-menu').first().find('.show').removeClass('show');
+            }
+
+            child.toggleClass("show");
+
+            $(this).parents('li.nav-item.dropdown').on('hidden.bs.dropdown', function (e) {
+                console.log("HAPPENING!")
+                $('.orange-dropdown').removeClass('show');
+            });
+
+            return false;
+        })
+
+    </script>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
