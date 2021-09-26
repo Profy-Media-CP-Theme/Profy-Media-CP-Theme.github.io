@@ -8,10 +8,11 @@ $('.dropdown-menu a.drop-toggle').on('mouseover', function(e) {
                               $(this).parents('.dropdown-menu').first().find('a.a-selected').removeClass('a-selected');
               }
     child.addClass("show");
-      $(this).addClass("a-selected")	
+    $(this).addClass("a-selected")	
     
     $(this).parents('li.nav-item.dropdown').on('hidden.bs.dropdown', function (e) {
                   $('.orange-dropdown').removeClass('show');
+                  $('.a-selected').removeClass('a-selected');
               });
     
   })
