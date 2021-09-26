@@ -50,9 +50,21 @@ div.nav-products {
     border: 0px;
 }
 
+
+.white-dropdown i {
+    float: right;
+}
+
 .white-dropdown {
     border-radius: inherit;
-    min-width: 10rem;
+    min-width: 12rem;
+    max-width: 16rem;
+}
+
+.white-dropdown a {
+    word-wrap: break-word;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .orange-dropdown {
