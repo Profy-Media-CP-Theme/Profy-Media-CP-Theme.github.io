@@ -1,11 +1,11 @@
 
-$('.dropdown-menu a.drop-toggle').on('mouseover', function(e) {
+$('.dropdown-menu .white-dropdown a').on('mouseover', function(e) {
     var togid = $(this).attr('id');
     var child = $(".orange-dropdown#" + togid).first();
     
     if (!child.hasClass('show')) {
-                  $(this).parents('.dropdown-menu').first().find('.show').removeClass('show');
-                              $(this).parents('.dropdown-menu').first().find('a.a-selected').removeClass('a-selected');
+                $(this).parents('.dropdown-menu').first().find('.show').removeClass('show');
+                $(this).parents('.dropdown-menu').first().find('a.a-selected').removeClass('a-selected');
               }
     child.addClass("show");
     $(this).addClass("a-selected")	
