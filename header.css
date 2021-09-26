@@ -27,6 +27,10 @@
     color: #4d4d4f;
 }
 
+.navbar-light .navbar-nav .nav-link.active:hover {
+    color: white;
+}
+
 .nav-gray.nav-link {
     color: #939598;
     border-radius: 20px;
@@ -40,15 +44,15 @@ nav.navbar {
     background: transparent !important; 
 }
 
-div#nav-products {
+div.nav-products {
     border-radius: 0 10px 10px;
     box-shadow: 0px 2px 5px 1px #818185;
     border: 0px;
-    margin-top:5px;
 }
 
 .white-dropdown {
     border-radius: inherit;
+    min-width: 10rem;
 }
 
 .orange-dropdown {
