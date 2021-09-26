@@ -47,15 +47,15 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            PRODUCTS &nbsp;<i class="bi bi-chevron-down"></i>
+                            PRODUCTS
                         </a>
-                        <div class="dropdown-menu flex-drop" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu flex-drop" id="nav-products" aria-labelledby="navbarDropdown">
                             <div class="white-dropdown p-3">
                                 <ul>
                                     <li>
-                                        <a class="dropdown-item drop-toggle" id="orangenav1">Card manunfacture</a>
+                                        <a class="dropdown-item drop-toggle" id="orangenav1" href="#">Card manunfacture</a>
                                     </li>
-                                    <li><a class="dropdown-item drop-toggle" id="orangenav2">Card services</a></li>
+                                    <li><a class="dropdown-item drop-toggle" id="orangenav2" href="#">Card services</a></li>
                                 </ul>
                             </div>
                             <div class="orange-dropdown p-3" id="orangenav1" aria-labelledby="orangenav1">
@@ -79,6 +79,9 @@
                         </div>
                     </li>
 
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CAREER</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">ABOUT US</a>
                     </li>
@@ -126,26 +129,8 @@
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
 
-    <script>
-        $('.dropdown-menu a.drop-toggle').on('click', function (e) {
-            var togid = $(this).attr('id');
-            var child = $(".orange-dropdown#" + togid).first();
 
-            if (!child.hasClass('show')) {
-                $(this).parents('.dropdown-menu').first().find('.show').removeClass('show');
-            }
-
-            child.toggleClass("show");
-
-            $(this).parents('li.nav-item.dropdown').on('hidden.bs.dropdown', function (e) {
-                console.log("HAPPENING!")
-                $('.orange-dropdown').removeClass('show');
-            });
-
-            return false;
-        })
-
-    </script>
+    <script src="header.js"></script>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
