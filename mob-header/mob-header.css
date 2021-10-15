@@ -1,0 +1,60 @@
+.sidenav {
+    height: 100%; 
+    width: 0; 
+    position: fixed;
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    background-color: white;   /* needs color any color */
+    overflow-x: hidden; 
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidenav a {
+    /* padding: 8px 8px 8px 32px; */
+    text-align: left;
+    text-decoration: none;
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    text-decoration: underline;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.nav-link[data-bs-toggle].collapsed[aria-expanded="false"] {
+    font-weight: inherit;
+}
+.nav-link[data-bs-toggle]:not(.collapsed)[aria-expanded="true"] {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.nav-link[data-bs-toggle].collapsed[aria-expanded="false"]::after {
+    content: " ▾";
+}
+.nav-link[data-bs-toggle]:not(.collapsed)[aria-expanded="true"]::after {
+    content: " ▴";
+}
+
+
+

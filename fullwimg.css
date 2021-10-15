@@ -1,0 +1,28 @@
+
+.fullwimg {
+    background-image: url("https://image.shutterstock.com/shutterstock/photos/241407796/display_1500/stock-photo-large-group-of-people-seen-from-above-gathered-in-the-shape-of-a-circle-standing-on-a-white-241407796.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+
+    /* can't work with vh really */
+    max-height: 90vh;
+    max-width:100%;
+}
+
+.fullimg {
+    height: 500px;
+    
+}
+
+.fullimg img {
+
+    position: absolute;
+    top: 0;
+    left: calc(50%);
+    transform: translatex(-50%);
+    object-fit: cover;
+    height: 100%;
+
+    width: 100%;
+    height: 100%;
+}
