@@ -38,8 +38,7 @@
                 <!-- <a class="nav-link text-truncate" href="#"><span class="d-sm-inline">PROIZVODI</span></a> -->
 
                 <div class="d-flex">
-                    <a class="nav-link text-truncate collapsed side-lv1" data-bs-toggle="collapse" href="#sideMenu2"
-                        aria-expanded="false" aria-controls="sideMenu2">
+                    <a class="nav-link text-truncate side-lv1" href="#">
                         PROIZVODI
                     </a>
 
@@ -62,17 +61,36 @@
 
             <li class="nav-item">
 
-                <a class="nav-link text-truncate collapsed side-lv1" data-bs-toggle="collapse" href="#sideMenu3"
-                    aria-expanded="false" aria-controls="sideMenu3">
-                    KARIJERA
-                </a>
+                <div class="d-flex">
+                    <a class="nav-link text-truncate side-lv1" href="#">
+                        KARIJERA
+                    </a>
+
+                    <button class="sideBtn" type="button" data-bs-toggle="collapse" data-bs-target="#sideMenu3"
+                        aria-expanded="false" aria-controls="sideMenu3">
+                        <span class="sideArrowUp"><i class="bi bi-chevron-up"></i></span>
+                        <span class="sideArrowDown"><i class="bi bi-chevron-down"></i></span>
+                    </button>
+                </div>
+
                 <div class="collapse" id="sideMenu3" aria-expanded="false">
                     <ul class="flex-column ps-2 nav">
                         <li class="nav-item">
 
-                            <a class="nav-link text-truncate collapsed py-1 side-lv2" data-bs-toggle="collapse"
-                                href="#sideSubMenu3sub1" aria-expanded="false"
-                                aria-controls="sideSubMenu3sub1">Customers</a>
+                            <div class="d-flex">
+                                <a class="nav-link text-truncate side-lv2" href="#">
+                                    Customers
+                                </a>
+
+                                <button class="sideBtn" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#sideSubMenu3sub1" aria-expanded="false"
+                                    aria-controls="sideSubMenu3sub1">
+                                    <span class="sideArrowUp"><i class="bi bi-chevron-up"></i></span>
+                                    <span class="sideArrowDown"><i class="bi bi-chevron-down"></i></span>
+                                </button>
+                            </div>
+
+
                             <div class="collapse" id="sideSubMenu3sub1" aria-expanded="false">
                                 <ul class="flex-column nav ps-4">
                                     <li class="nav-item">
@@ -94,9 +112,20 @@
 
                         <li class="nav-item">
 
-                            <a class="nav-link text-truncate collapsed py-1 side-lv2" data-bs-toggle="collapse"
-                                href="#sideSubMenu3sub2" aria-expanded="false"
-                                aria-controls="sideSubMenu3sub2">Employees</a>
+                            <div class="d-flex">
+                                <a class="nav-link text-truncate side-lv2" href="#">
+                                    Employees
+                                </a>
+
+                                <button class="sideBtn" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#sideSubMenu3sub2" aria-expanded="false"
+                                    aria-controls="sideSubMenu3sub2">
+                                    <span class="sideArrowUp"><i class="bi bi-chevron-up"></i></span>
+                                    <span class="sideArrowDown"><i class="bi bi-chevron-down"></i></span>
+                                </button>
+                            </div>
+
+
                             <div class="collapse" id="sideSubMenu3sub2" aria-expanded="false">
                                 <ul class="flex-column nav ps-4">
                                     <li class="nav-item">

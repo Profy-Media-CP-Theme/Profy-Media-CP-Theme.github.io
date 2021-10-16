@@ -59,13 +59,12 @@
     font-weight: bold;
 }
 
-.nav-link[data-bs-toggle].collapsed[aria-expanded="false"]::after {
+/* .nav-link[data-bs-toggle].collapsed[aria-expanded="false"]::after {
     content: " ▾";
 }
 .nav-link[data-bs-toggle]:not(.collapsed)[aria-expanded="true"]::after {
     content: " ▴";
-}
-
+} */
 
 .sideArrowDown, .sideArrowUp {
     display: none;
