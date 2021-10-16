@@ -37,10 +37,20 @@
             <li class="nav-item">
                 <!-- <a class="nav-link text-truncate" href="#"><span class="d-sm-inline">PROIZVODI</span></a> -->
 
-                <a class="nav-link text-truncate collapsed side-lv1" data-bs-toggle="collapse" href="#sideMenu2" aria-expanded="false"
-                    aria-controls="sideMenu2">
-                    PROIZVODI
-                </a>
+                <div class="d-flex">
+                    <a class="nav-link text-truncate collapsed side-lv1" data-bs-toggle="collapse" href="#sideMenu2"
+                        aria-expanded="false" aria-controls="sideMenu2">
+                        PROIZVODI
+                    </a>
+
+                    <button class="sideBtn" type="button" data-bs-toggle="collapse" data-bs-target="#sideMenu2"
+                        aria-expanded="false" aria-controls="sideMenu2">
+                        <span class="sideArrowUp"><i class="bi bi-chevron-up"></i></span>
+                        <span class="sideArrowDown"><i class="bi bi-chevron-down"></i></span>
+                    </button>
+
+                </div>
+
                 <div class="collapse" id="sideMenu2" aria-expanded="false">
                     <ul class="flex-column ps-2 nav">
                         <li class="nav-item"><a class="nav-link py-1 side-lv2" href="#">Orders</a></li>
@@ -52,8 +62,8 @@
 
             <li class="nav-item">
 
-                <a class="nav-link text-truncate collapsed side-lv1" data-bs-toggle="collapse" href="#sideMenu3" aria-expanded="false"
-                    aria-controls="sideMenu3">
+                <a class="nav-link text-truncate collapsed side-lv1" data-bs-toggle="collapse" href="#sideMenu3"
+                    aria-expanded="false" aria-controls="sideMenu3">
                     KARIJERA
                 </a>
                 <div class="collapse" id="sideMenu3" aria-expanded="false">

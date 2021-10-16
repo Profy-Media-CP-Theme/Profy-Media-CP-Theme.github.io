@@ -12,11 +12,13 @@
 }
 
 .sidenav a {
-    /* padding: 8px 8px 8px 32px; */
+    padding: 8px;
+    margin-right: auto;
     text-align: left;
     text-decoration: none;
     font-size: 25px;
     transition: 0.3s;
+    width:auto;
 }
 
 .sidenav a:hover {
@@ -29,6 +31,14 @@
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+}
+
+.sideBtn {
+    flex-basis: 4rem;
+}
+
+.sidenav li.nav-item {
+    margin: 8px 16px 8px 8px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -57,4 +67,14 @@
 }
 
 
+.sideArrowDown, .sideArrowUp {
+    display: none;
+}
 
+button.sideBtn[data-bs-toggle][aria-expanded="false"] > .sideArrowDown {
+    display: block;
+}
+
+button.sideBtn[data-bs-toggle]:not(.collapsed)[aria-expanded="true"] > .sideArrowUp {
+    display: block;
+}
