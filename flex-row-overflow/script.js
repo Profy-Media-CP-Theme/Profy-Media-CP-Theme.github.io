@@ -1,5 +1,5 @@
 
-document.addEventListener('DOMContentLoaded', function() {
+jQuery(document).ready(function ($) {
 
     let pos = { left: 0, x: 0};
     const ele = document.getElementById('row-overflow-wrapper');
