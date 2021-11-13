@@ -1,0 +1,14 @@
+
+.tabs25 .nav-tabs .nav-link {
+    margin-bottom: -2px;
+    border: 0;
+    background-color: inherit;
+    border-color: inherit;
+    color: gray;
+}
+
+.tabs25 .nav-tabs .nav-link.active {
+    border-bottom: 3px solid green;
+    color: black;
+
+}
