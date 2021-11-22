@@ -1,0 +1,58 @@
+
+.element-19 {
+  width: 100%;
+  height: 100vh;
+}
+
+
+.element-19 .fullw-img-19 {
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+  
+.element-19 .zindex-19 {
+  z-index: -1;
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.element-19 .cta-19 {
+  position: absolute;
+  z-index: -2;
+}
+
+@media screen and (max-width: 767px) {
+
+  .element-19 {
+    height: auto;
+  }
+
+  .element-19 .zindex-19 {
+    position: static;
+    height: auto;
+  }
+
+  .element-19 .fullw-img-19 {
+    position: static;
+    height: auto;
+    width: 100%;
+    background-image: none;
+  }
+
+  .element-19 .fullw-img-19 .img-src-19 {
+    width: 100%;
+  }
+
+}

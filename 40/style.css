@@ -1,0 +1,42 @@
+.grid-element {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+    width: 150px;
+}
+
+.grid-element > img {
+    object-fit: contain;
+}
+
+.grid-element * {
+    width: 100%;
+}
+
+.modal-header, .modal-footer {
+    padding: 0.5rem;
+    border-bottom: none;
+    border-top: none;
+}
+
+.modal-img-40 {
+    width: 100%;
+    object-fit: contain;
+}
+
+
+.modal-text-40 {
+    margin-top: 3rem;
+    line-height: 1.2;
+
+}
+
+.text-heading-40 {
+    font-size: 1.6em;
+}
+
+.modal-flag-40 {
+    padding: 4px;
+}
