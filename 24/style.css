@@ -1,7 +1,20 @@
 
-.text-24 {
-
+.flex-24:not(.reverse-24) > .text-24 {
+    margin-right: 1rem;
 }
+
+.flex-24.reverse-24 > .text-24 {
+    margin-left: 1rem;
+}
+
+.flex-24:not(.reverse-24) {
+    flex-direction: row;
+}
+
+.flex-24.reverse-24 {
+    flex-direction: row-reverse;
+}
+
 
 .visual-24  {
     width: 500px;
@@ -16,3 +29,9 @@
 .visual-24 .img-content-24 img {
     width: inherit;
 }
+
+@media screen and (max-width: 768px) {
+    
+
+  
+  }
