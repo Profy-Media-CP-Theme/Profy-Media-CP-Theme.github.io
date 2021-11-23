@@ -1,43 +1,18 @@
 
 .text-24 {
-    height: 5000px;
+
 }
 
-.visual-24 {
-    position: relative;
+.visual-24  {
     width: 500px;
 }
 
 .visual-24 .img-content-24 {
-    position: absolute;
-    top:0;
-    left:0;
+    position: sticky;
+    top: 0;
     width: inherit;
-    height: 100vh;
 }
 
 .visual-24 .img-content-24 img {
-    object-fit: contain;
     width: inherit;
-}
-
-.visual-24.before24 > .img-content-24 {
-    position: absolute;
-    left:0;
-    top:0;
-    bottom:unset;
-}
-
-.visual-24.in24 > .img-content-24 {
-    position: fixed;
-    left: unset;
-    top:0;
-    bottom:unset;
-}
-
-.visual-24.after24 > .img-content-24 {
-    position: absolute;
-    left:0;
-    bottom:0;
-    top:unset;
 }
