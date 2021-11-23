@@ -51,6 +51,10 @@
         top: unset;
         box-shadow: 0 15px 20px -5px gray;
     }
+
+    /* .visual-24 .img-content-24 > :not(img) {
+        padding: calc(var(--bs-gutter-x) * .5);
+    } */
     
     .container-24 > .row > * {
         padding: unset;
