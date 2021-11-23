@@ -15,9 +15,12 @@
     flex-direction: row;
 }
 
+.flex-24 {
+    margin-bottom: 1rem;
+}
 
 .visual-24  {
-    width: 500px;
+    width: 500px; /* remove later */
 }
 
 .visual-24 .img-content-24 {
@@ -25,15 +28,14 @@
     position: sticky;
     top: 0;
     width: inherit;
-    padding-bottom: 1rem;
 }
 
 .visual-24 .img-content-24 img {
     width: inherit;
 }
 
-@media screen and (max-width: 768px) {
-    
+@media screen and (max-width: 767px) {
+
     .flex-24:not(.reverse-24) > .text-24, .flex-24.reverse-24 > .text-24{
         margin: auto;
     }
@@ -47,6 +49,14 @@
     .visual-24 .img-content-24{
         position: static;
         top: unset;
+        box-shadow: 0 15px 20px -5px gray;
     }
     
+    .container-24 > .row > * {
+        padding: unset;
+    }
+
+    .container-24 .flex-24 > :not(.visual-24) {
+        padding: 1rem calc(var(--bs-gutter-x) * .5);
+    }
 }
