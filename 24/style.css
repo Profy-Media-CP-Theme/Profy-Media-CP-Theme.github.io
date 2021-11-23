@@ -8,11 +8,11 @@
 }
 
 .flex-24:not(.reverse-24) {
-    flex-direction: row;
+    flex-direction: row-reverse;
 }
 
 .flex-24.reverse-24 {
-    flex-direction: row-reverse;
+    flex-direction: row;
 }
 
 
@@ -21,8 +21,8 @@
 }
 
 .visual-24 .img-content-24 {
-    position: sticky;
     position: -webkit-sticky;
+    position: sticky;
     top: 0;
     width: inherit;
     padding-bottom: 1rem;
@@ -44,6 +44,9 @@
 
     .visual-24 {
         width: 100%;
+        position: sticky;
+        top:0;
+        background-color: inherit;
     }
     
 }
