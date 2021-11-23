@@ -22,8 +22,10 @@
 
 .visual-24 .img-content-24 {
     position: sticky;
+    position: -webkit-sticky;
     top: 0;
     width: inherit;
+    padding-bottom: 1rem;
 }
 
 .visual-24 .img-content-24 img {
@@ -32,6 +34,16 @@
 
 @media screen and (max-width: 768px) {
     
+    .flex-24:not(.reverse-24) > .text-24, .flex-24.reverse-24 > .text-24{
+        margin: auto;
+    }
+    
+    .flex-24:not(.reverse-24), .flex-24.reverse-24 {
+        flex-direction: column-reverse;
+    }
 
-  
-  }
+    .visual-24 {
+        width: 100%;
+    }
+    
+}
