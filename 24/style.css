@@ -43,5 +43,10 @@
         position: sticky;
         top:0;
     }
+
+    .visual-24 .img-content-24{
+        position: static;
+        top: unset;
+    }
     
 }
