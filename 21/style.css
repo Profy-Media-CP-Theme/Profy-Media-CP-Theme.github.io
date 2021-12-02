@@ -32,7 +32,7 @@
     border-radius: 50%;
     display: inline-block;
     transform: translate(-50%, -50%);
-
+    cursor: pointer;
 }
 
 .big-21 > .dot-21.filtered {
