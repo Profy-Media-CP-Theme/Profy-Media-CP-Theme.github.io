@@ -1,24 +1,18 @@
+.element-11 {
+    height: 500px;
+}
+
+.img-11 {
+    position: absolute;
+    top: 0;
+    left: calc(50%);
+    transform: translatex(-50%);
+    object-fit: cover;
+    height: 100%;
+    width:100%;
+}
+
 .text-11 {
-    padding: 20px;
-    width: 200px;
-}
-
-.fullw-img-11 {
-    width: 100%;
-    height: auto;
-}
-
-.vcenter-11 {
-    transform: translate(0, -50%);
-    -webkit-transform: translate(0, -50%);
-}
-
-.hcenter-11 {
-    transform: translate(-50%, 0);
-    -webkit-transform: translate(-50%, 0);
-}
-
-.vhcenter-11 {
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
+    top: 0;
+    left: 0;
 }
