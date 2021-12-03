@@ -24,6 +24,7 @@
 
 .tabs25 ul.nav.nav-tabs > li.nav-item > button.nav-link {
     height: 100%;
+    white-space: nowrap;
 }
 
 .tabs25 .nav-tabs .nav-item {
@@ -41,4 +42,13 @@
 .row-overflow-wrapper {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+}
+
+.progress-25{
+    height: 6px;
+}
+
+.v-center {
+    display: flex;
+    align-items: center;
 }
