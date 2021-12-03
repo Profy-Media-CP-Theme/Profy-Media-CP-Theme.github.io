@@ -7,8 +7,38 @@
     color: gray;
 }
 
+.tabs25 .nav-tabs .nav-link:not(.active) {
+    border-bottom: 3px solid transparent;
+}
+
 .tabs25 .nav-tabs .nav-link.active {
     border-bottom: 3px solid green;
     color: black;
 
+}
+
+.tabs25 ul.nav.nav-tabs {
+    width: 100%;
+    overflow-x: scroll;
+}
+
+.tabs25 ul.nav.nav-tabs > li.nav-item > button.nav-link {
+    height: 100%;
+}
+
+.tabs25 .nav-tabs .nav-item {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.row-overflow-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+.row-overflow-wrapper::-webkit-scrollbar {
+    display: none;
+}
+.row-overflow-wrapper {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
