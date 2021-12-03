@@ -12,5 +12,6 @@ jQuery(document).ready(function ($) {
     const startAnimationElements = document.querySelectorAll('.progress-25 > .start-transition');
     startAnimationElements.forEach((el) => {
       observer.observe(el);
-    })
+    });
+    
 });
