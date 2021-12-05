@@ -1,0 +1,48 @@
+.element-26 .top-26 {
+    flex-direction: row;
+    margin: 2rem 0.5rem;
+}
+
+.element-26 .top-26 .dots-26 {
+    align-items: end;
+}
+
+.element-26 .top-26 .dot-26 {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    background-color: red;
+    margin: 0.25rem;
+}
+
+.bot-26 > div {
+    margin: 0.5rem;
+    display: inline-block;
+
+    /* Kontrola ovo podesava, drugi ima grow pa ce se namestiti */
+    width: 300px;
+}
+.bot-26 > div > img {
+    width: 100% !important;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-26 {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .element-26 .top-26 {
+        flex-direction: column;
+    }
+
+    .element-26 .top-26 .dots-26 {
+        align-items: start;
+    }
+}
