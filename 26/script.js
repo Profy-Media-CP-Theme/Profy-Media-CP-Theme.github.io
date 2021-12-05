@@ -1,5 +1,7 @@
 jQuery(document).ready(function ($) {
 
+    const timeInterval = 4000;
+
     var elements26 = [].slice.call(document.querySelectorAll('.element-26'));
     
     elements26.forEach(element => {
@@ -9,6 +11,7 @@ jQuery(document).ready(function ($) {
         var slider26 = document.querySelector("#" + element.id + "-imgs-26");
         var selected = 0;
         var maxItems = triggerBtnList.length;
+        var timeout;
 
         triggerBtnList.forEach((triggerEl, index) => {
             triggerEl.addEventListener('click', function(event) {
@@ -29,13 +32,18 @@ jQuery(document).ready(function ($) {
                     img.classList.remove("active-26");
                 }
             });
+            timeoutHandler();
         }
 
-        setInterval(function() {
-            selected = (selected + 1) % maxItems;
-            scrollImg26(selected);
-        }, 3000);
+        timeoutHandler();
 
+        function timeoutHandler() {
+            clearTimeout(timeout);
+            timeout = setTimeout(function() {
+                selected = (selected + 1) % maxItems;
+                scrollImg26(selected);
+            }, timeInterval);
+        }
 
     });
 
