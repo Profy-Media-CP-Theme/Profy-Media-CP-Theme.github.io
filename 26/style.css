@@ -35,6 +35,18 @@
     scroll-behavior: smooth;
 }
 
+.static-26 {
+    overflow-y: hidden;
+}
+
+.still-img-26:not(.active-26) {
+    display: none;
+}
+
+.still-img-26.active-26 {
+    display: inline;
+}
+
 
 @media screen and (max-width: 768px) {
 
