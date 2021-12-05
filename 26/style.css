@@ -39,12 +39,23 @@
     overflow-y: hidden;
 }
 
+.still-img-26 {
+    transition: 0.5s;
+}
+
 .still-img-26:not(.active-26) {
     display: none;
 }
 
 .still-img-26.active-26 {
     display: inline;
+}
+
+.dot-pause-26 {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 0.25rem;
 }
 
 

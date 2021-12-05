@@ -13,7 +13,7 @@
     scroll-snap-type: y mandatory;
 }
 
-.element-22 > div {
+.element-22  .section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,7 +24,11 @@
 
 }
 
-#fullview > div > img {
+.element-22  .section > .content-22 {
+    height: 100%;
+}
+
+#fullpage  .section > img {
     object-fit: cover;
     width: 100%;
     height: 100%;
