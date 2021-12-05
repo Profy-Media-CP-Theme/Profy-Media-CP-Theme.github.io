@@ -11,7 +11,7 @@ jQuery(document).ready(function ($) {
             triggerEl.addEventListener('click', function(event) {
                 event.preventDefault();
 
-                slider26.scrollTo({behavior: 'smooth', left: triggerImgList[index].offsetLeft - slider26.offsetLeft});
+                slider26.scrollTo({behavior: 'smooth', left: triggerImgList[index].offsetLeft - triggerImgList[0].offsetLeft});
             });
     
         });
