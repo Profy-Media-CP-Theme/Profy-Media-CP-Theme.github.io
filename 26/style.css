@@ -22,7 +22,7 @@
     display: inline-block;
 
     /* Kontrola ovo podesava, drugi ima grow pa ce se namestiti */
-    width: 300px;
+    width: 600px;
 }
 .bot-26 > div > img {
     width: 100% !important;
@@ -36,19 +36,22 @@
 }
 
 .static-26 {
-    overflow-y: hidden;
+    position: relative;
 }
 
 .still-img-26 {
-    transition: 0.5s;
+    transition: 1s;
+    position: absolute;
+    height: 100%;
+    width: 100%;
 }
 
 .still-img-26:not(.active-26) {
-    display: none;
+    opacity: 0;
 }
 
 .still-img-26.active-26 {
-    display: inline;
+    opacity: 100%;
 }
 
 .dot-pause-26 {
