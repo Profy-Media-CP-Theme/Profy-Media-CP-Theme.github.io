@@ -1,13 +1,19 @@
 
 @media screen and (min-width: 768px) {
 
-    html, body {
-        min-height: 103vh;
+    .wrapper-23 {
+        height: 170vh;
     }
     
     .element-23 {
+        height: 100vh;
+        position: -webkit-sticky;
+        position: sticky;
+        top:0;
+
         display: grid;
-        grid-template-rows: auto auto;
+        /* grid-auto-rows: min-content; */
+        grid-template-rows:auto min-content min-content auto;
         grid-template-columns: 1fr 1fr;
         column-gap: 0;
         width: 100%;
@@ -21,6 +27,11 @@
     
     .element-23 img {
         width: 100%;
+    }
+
+    .margin-div-23 {
+        -ms-grid-column-span: 2;
+        grid-column: span 2;
     }
     
     .maintext-23 {
@@ -52,6 +63,7 @@
         position: absolute;
         left: 150%;
         top: 50%;
+        width: 30%;
         transform: translatey(-50%);
     }
     
@@ -62,8 +74,6 @@
     
     .ltext-23, .rtext-23 {
         opacity: 0;
-        /* display: none; */
-        /* transition: 1s; */
     }
     
     .element-23.transform-23 .text-23 {
