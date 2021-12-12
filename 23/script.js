@@ -5,8 +5,9 @@ jQuery(document).ready(function ($) {
     elements23.forEach(element => {
 
         trig23 = true;
+        if ($(window).width() < 768) trig23 = false;
         grid23 = $("#"+element.id);
-        offsetHeight = grid23.offset().top + 0.25*grid23.children().first().outerHeight();
+        offsetHeight = grid23.offset().top + 0.2*grid23.children().first().outerHeight();
         offsetEnd = grid23.offset().top + 0.8*grid23.children().first().outerHeight();
 
         $(window).scroll(function () {
@@ -14,7 +15,7 @@ jQuery(document).ready(function ($) {
                 scrollTopVal = $(window).scrollTop();
                 if (scrollTopVal > offsetHeight && scrollTopVal < offsetEnd) {
                     trig23 = false;
-                    doit(element.id);
+                    doit23(element.id);
                 }
             }
 
@@ -22,7 +23,7 @@ jQuery(document).ready(function ($) {
 
     });
 
-    function doit(id) {
+    function doit23(id) {
 
         var x23 = $('#'+id + ' > .element-23').addClass("start-23");
 

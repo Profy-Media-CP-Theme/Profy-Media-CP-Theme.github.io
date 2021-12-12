@@ -2,7 +2,7 @@
 @media screen and (min-width: 768px) {
 
     .wrapper-23 {
-        height: 170vh;
+        height: 190vh;
     }
     
     .element-23 {
@@ -86,5 +86,51 @@
 
 @media screen and (max-width: 767px) {
 
+    .element-23 img {
+        width: 100%;
+
+    }
+
+    .maintext-23, .left-23, .right-23 {
+        position: relative;
+        margin: 1rem 0;
+    }
+
+    .maintext-23 .maintext-mob-23 {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .maintext-23 .extratext-mob-23 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 35%;
+        transform: translateY(-50%);
+    }
+
+    .left-23 .extratext-23 {
+        display: none;
+    }
+
+    .left-23 .ltext-23 {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .right-23 .rtext-23 {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .text-23, .extratext-mob-23, .maintext-mob-23 {
+        max-height: 100%;
+    } 
 
 }

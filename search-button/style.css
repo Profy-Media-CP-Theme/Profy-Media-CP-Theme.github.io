@@ -1,0 +1,30 @@
+
+
+.searchbar-desk {
+    position: relative;
+}
+
+
+
+.searchbar-desk input::-webkit-search-cancel-button {
+    filter: hue-rotate(130deg);
+    /* -webkit-appearance: none; */
+}
+
+.searchbar-desk input {
+    transition: 0.5s;
+
+    position: absolute;
+    right: 100%;
+}
+
+.searchbar-desk input.hidden-search {
+    opacity: 0;
+}
+
+
+/* extra */
+.searchbar-desk {
+text-align: right;
+
+}
