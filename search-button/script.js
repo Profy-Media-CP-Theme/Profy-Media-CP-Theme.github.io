@@ -2,30 +2,45 @@ jQuery(document).ready(function ($) {
 
     var searchActive = false;
     var searchDesk = $('.searchbar-desk .search-icon');
-    var searchDeskInput = $('.searchbar-desk .search-input');
+    var searchDeskForm = $('.searchbar-desk .search-form');
+    var searchDeskInput = searchDeskForm.find('input');
+    var searchDeskClose = $('.searchbar-desk .form-close');
 
     searchDesk.click(function(event) {
         
-        if(!searchActive) {
-            event.preventDefault();
-        }
-
-        searchActive = !searchActive;
+        event.preventDefault();
         
-        if (searchActive) {
-            searchDeskInput.removeClass("hidden-search");
+        if(searchActive) {
+            window.location.replace(window.location.origin + "?s=" + searchDeskInput.val());
         } else {
-            searchDeskInput.addClass("hidden-search");
+            toggleSearch();
         }
-
 
     });
 
+    searchDeskClose.click(function(event) {
+        event.preventDefault();
 
-    function refreshSearch() {
+        toggleSearch();
+
+        searchDeskInput.val('');
+    });
+
+    searchDeskInput.keypress(function(e){
+        if(e.keyCode==13)
+        searchDesk.click();
+      });
+
+
+    function toggleSearch() {
+        searchActive = !searchActive;
+        
         if (searchActive) {
-
+            searchDeskForm.removeClass("vishid").removeClass("hidden-search");
+        } else {
+            searchDeskForm.addClass("vishid").addClass("hidden-search");
         }
+
     }
 
 });

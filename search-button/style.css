@@ -4,27 +4,26 @@
     position: relative;
 }
 
-
-
-.searchbar-desk input::-webkit-search-cancel-button {
+.searchbar-desk .search-form input::-webkit-search-cancel-button {
     filter: hue-rotate(130deg);
-    /* -webkit-appearance: none; */
+    -webkit-appearance: none;
 }
 
-.searchbar-desk input {
-    transition: 0.5s;
+.searchbar-desk .search-form {
+    transition: 0.6s;
 
     position: absolute;
     right: 100%;
 }
 
-.searchbar-desk input.hidden-search {
-    opacity: 0;
+.vishid {
+    visibility: hidden;
 }
 
+input.form-control {
+    width: 250px;
+}
 
-/* extra */
-.searchbar-desk {
-text-align: right;
-
+.searchbar-desk .search-form.hidden-search {
+    opacity: 0;
 }

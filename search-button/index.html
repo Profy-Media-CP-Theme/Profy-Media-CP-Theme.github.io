@@ -30,9 +30,12 @@
 
                 <div style='width:300px;' class='ms-auto searchbar-desk'>
                     <form class="d-flex">
-                        <input class="form-control me-2 search-input hidden-search" type="search"
-                            placeholder="Search..." aria-label="Search">
-                        <button class="btn btn-outline-success search-icon" type="submit"> <i class="bi bi-search"></i> </button>
+                        <div class='search-form d-flex hidden-search vishid'>
+                            <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+                            <button class="btn btn-outline-danger me-2 form-close"> <i class="bi bi-x"></i> </button>
+                        </div>
+                        <button class="btn btn-outline-success search-icon" type="submit"> <i class="bi bi-search"></i>
+                        </button>
                     </form>
                 </div>
 
