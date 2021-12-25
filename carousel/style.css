@@ -1,7 +1,12 @@
 
 .owl-carousel {
     position: relative;
+}
 
+.owl-carousel img {
+    object-fit: cover;
+
+    width: 100%;
 }
 
 
@@ -9,7 +14,7 @@
     position: absolute;
     left: 0.5rem;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-100%);
 }
 
 
@@ -17,7 +22,7 @@
     position: absolute;
     right: 0.5rem;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-100%);
 }
 
 
