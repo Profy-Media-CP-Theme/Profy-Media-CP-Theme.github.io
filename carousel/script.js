@@ -21,22 +21,31 @@ jQuery(document).ready(function ($) {
     });
 
     var contents;
-    var currentSlide = -1;
+    var virtualContents;
+    var currentSlide = 0;
 
     function translateCb(event) {
         index = event.page.index;
-        translationHandler(index);
+        virtualIndex = event.item.index;
+        translationHandler(index, virtualIndex);
     }
 
-    function translationHandler(index) {
+    function translationHandler(index, virtualIndex = -1) {
         currentSlide = index;
-        console.log('handling: ' + index);
         current = contents[index];
+        if (virtualIndex != -1) {
+            current = virtualContents[virtualIndex];
+        }
         if (current.tagName == "VIDEO") {
             owl.trigger("stop.owl.autoplay");
-            current.pause();
             current.currentTime = '0';
-            current.play();
+            current.play().catch(error=>{});
+            owl.one("translate.owl.carousel", (event) => {
+                if (event.page.index !== index) {
+                    current.pause();
+                    current.currentTime = '0';
+                }
+            });
             current.addEventListener('ended', (event) => {
                 if (currentSlide === index) {
                     nextSlide();
@@ -51,8 +60,9 @@ jQuery(document).ready(function ($) {
         owl.trigger("next.owl.carousel");
     }
 
-    function startFirst(event) {
+    function startFirst() {
         contents = jQuery(".owl-carousel .owl-item:not(.cloned) .carousel-content");
+        virtualContents = jQuery(".owl-carousel .owl-item .carousel-content");
         translationHandler(0);
     }
     
