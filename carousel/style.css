@@ -3,18 +3,11 @@
     position: relative;
 }
 
-.owl-carousel img {
-    object-fit: cover;
-
-    width: 100%;
-}
-
-
 .owl-carousel .owl-nav .owl-prev {
     position: absolute;
     left: 0.5rem;
     top: 50%;
-    transform: translateY(-100%);
+    transform: translateY(-50%);
 }
 
 
@@ -22,7 +15,7 @@
     position: absolute;
     right: 0.5rem;
     top: 50%;
-    transform: translateY(-100%);
+    transform: translateY(-50%);
 }
 
 
@@ -31,4 +24,34 @@
     left: 50%;
     transform: translateX(-50%);
     bottom: 0.5rem;
+}
+
+.owl-carousel .item > .carousel-content {
+    width: 100%;
+    height: 100%;
+    object-fit: inherit;
+    object-position: inherit;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
+
+.owl-carousel .item > picture.carousel-content > * {
+    width: 100%;
+    height: 100%;
+    object-fit: inherit;
+    object-position: inherit;
+}
+
+.owl-carousel .item {
+    position: relative;
+    height: 400px; /* manually set */
+    object-fit: cover;
+}
+
+
+html, body {
+    min-height: 100vh;
 }
